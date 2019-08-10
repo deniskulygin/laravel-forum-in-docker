@@ -6,9 +6,17 @@
 .docker-sync
 /jenkins/jenkins_home
 
+
 /logstash/pipeline/*.conf
 /logstash/config/pipelines.yml
 
 /nginx/ssl/*.crt
 /nginx/ssl/*.key
 /nginx/ssl/*.csr
+
+/mysql/forum/ib_logfile*
+/mysql/forum/mysql/general_log*
+/mysql/forum/mysql/slow_log*
+/mysql/forum/performance_schema/*
+/mysql/forum/#innodb_temp/*
+/mysql/forum/binlog.*

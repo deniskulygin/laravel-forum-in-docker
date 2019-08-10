@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Thread;
 use App\Reply;
 use foo\bar;
+use http\Env\Response;
 use Illuminate\Http\Request;
 
 class RepliesController extends Controller
@@ -48,7 +49,7 @@ class RepliesController extends Controller
             'user_id' => auth()->id()
         ]);
 
-        return back();
+        return back()->with('flash', 'Your reply has been left.');
     }
 
     /**
@@ -86,13 +87,17 @@ class RepliesController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * @param Reply $reply
      *
-     * @param  \App\Reply  $reply
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
     public function destroy(Reply $reply)
     {
-        //
+        $this->authorize('update', $reply);
+
+        $reply->delete();
+
+        return back();
     }
 }

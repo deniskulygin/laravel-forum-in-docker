@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }} " rel="stylesheet">
 
     <style>
         body { padding-bottom: 100px; }
@@ -32,6 +32,8 @@
 
         <main class="py-4">
             @yield('content')
+
+                <flash message="session{{ ('flash') }}"></flash>
         </main>
     </div>
 </body>
