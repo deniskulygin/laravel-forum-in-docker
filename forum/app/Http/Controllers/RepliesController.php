@@ -6,7 +6,10 @@ use App\Thread;
 use App\Reply;
 use foo\bar;
 use http\Env\Response;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException as ValidationExceptionAlias;
 
 class RepliesController extends Controller
 {
@@ -38,7 +41,7 @@ class RepliesController extends Controller
     /**
      * @param $channelId
      * @param Thread $thread
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function store($channelId, Thread $thread)
     {
@@ -55,8 +58,8 @@ class RepliesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Reply  $reply
-     * @return \Illuminate\Http\Response
+     * @param Reply $reply
+     * @return void
      */
     public function show(Reply $reply)
     {
@@ -66,7 +69,7 @@ class RepliesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Reply  $reply
+     * @param Reply $reply
      * @return \Illuminate\Http\Response
      */
     public function edit(Reply $reply)
@@ -75,21 +78,25 @@ class RepliesController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * @param Request $request
+     * @param Reply $reply
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Reply  $reply
-     * @return \Illuminate\Http\Response
+     * @throws AuthorizationException
+     * @throws ValidationExceptionAlias
      */
-    public function update(Request $request, Reply $reply)
+    public function update(Request $request, Reply $reply): void
     {
-        //
+        $this->authorize('update', $reply);
+
+        $this->validate($request, ['body' => 'required']);
+
+        $reply->update(['body' => $request['body']]);
     }
 
     /**
      * @param Reply $reply
      *
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      * @throws \Exception
      */
     public function destroy(Reply $reply)

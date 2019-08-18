@@ -2,196 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9ba2b12-16c1-4650-a265-c24f81f229a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7231d8d2-95a4-487b-8907-845f92fe34dc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/forum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_1.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_10.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_2.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_3.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_4.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_5.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_6.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_7.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_8.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/auto.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/binlog.000001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/binlog.000002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/binlog.000003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/binlog.000004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/binlog.000005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/binlog.000006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/binlog.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/ca-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/ca.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/client-cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/client-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/activities.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/channels.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/favorites.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/migrations.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/password_resets.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/replies.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/threads.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/users.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/ib_buffer_pool" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/ib_logfile0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/ib_logfile1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/ibdata1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/ibtmp1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql/general_log.CSM" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql/general_log.CSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql/general_log_201.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql/slow_log.CSM" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql/slow_log.CSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql/slow_log_202.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/accounts_138.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/cond_instances_77.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/data_lock_waits_154.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/data_locks_153.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_errors_su_132.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_errors_su_133.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_errors_su_134.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_errors_su_135.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_errors_su_136.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_cu_104.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_hi_105.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_hi_106.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_su_107.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_su_108.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_su_109.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_su_110.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_stages_su_111.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_112.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_113.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_114.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_115.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_116.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_117.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_118.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_119.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_120.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_121.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_122.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_statement_123.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_124.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_125.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_126.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_127.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_128.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_129.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_130.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_transacti_131.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_cur_78.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_his_79.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_his_80.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_sum_81.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_sum_82.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_sum_83.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_sum_84.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_sum_85.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/events_waits_sum_86.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/file_instances_87.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/file_summary_by__88.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/file_summary_by__89.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/global_status_172.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/global_variables_175.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/host_cache_90.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/hosts_139.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/keyring_keys_145.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/log_status_165.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/memory_summary_b_147.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/memory_summary_b_148.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/memory_summary_b_149.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/memory_summary_b_150.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/memory_summary_g_146.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/metadata_locks_152.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/mutex_instances_91.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/objects_summary__92.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/performance_time_93.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/persisted_variab_178.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/prepared_stateme_166.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_appl_158.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_appl_159.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_appl_160.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_appl_161.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_appl_163.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_appl_164.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_conn_155.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_conn_157.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_grou_156.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/replication_grou_162.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/rwlock_instances_94.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/session_account__144.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/session_connect__143.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/session_status_173.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/session_variable_176.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/setup_actors_95.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/setup_consumers_96.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/setup_instrument_97.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/setup_objects_98.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/setup_threads_99.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/socket_instances_140.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/socket_summary_b_141.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/socket_summary_b_142.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/status_by_accoun_168.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/status_by_host_169.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/status_by_thread_170.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/status_by_user_171.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/table_handles_151.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/table_io_waits_s_100.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/table_io_waits_s_101.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/table_lock_waits_102.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/threads_103.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/user_defined_fun_179.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/user_variables_b_167.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/users_137.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/variables_by_thr_174.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/performance_schema/variables_info_177.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/private_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/public_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/server-cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/server-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/sys/sys_config.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/undo_001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laradock/mysql/forum/undo_002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Flash.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profiles/activities/created_favorite.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Favorite.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Favorite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Reply.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/RecordsActivity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RecordsActivity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reply.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Thread.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laradock/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laradock/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/mysql/forum/forum/replies.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/mysql/forum/forum/replies.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/mysql/forum/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/mysql/forum/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/mysql/forum/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/mysql/forum/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/mysql/forum/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/mysql/forum/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/mysql/forum/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/mysql/forum/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/mysql/forum/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/mysql/forum/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/mysql/forum/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/mysql/forum/undo_002" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/threads/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/threads/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/threads/reply.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/threads/reply.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/threads/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/threads/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/debugbar/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CreateThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CreateThreadsTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -237,38 +67,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="193">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/threads/reply.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Policies/ReplyPolicy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#32#46#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/debugbar/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            <state>
+              <caret column="56" selection-start-column="56" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -276,8 +80,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RepliesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+            <state relative-caret-position="553">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+              <folding>
+                <element signature="e#40#55#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -286,43 +93,70 @@
         <entry file="file://$PROJECT_DIR$/resources/views/threads/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+              <caret selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/threads/reply.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="57" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="57" />
+            <state relative-caret-position="-272">
+              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/Reply.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/laradock/.gitignore">
+        <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="211">
+              <caret line="5517" column="15" selection-start-line="5517" selection-start-column="15" selection-end-line="5517" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="658">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="943">
+              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/Flash.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -345,6 +179,8 @@
       <find>Record</find>
       <find>layout/app</find>
       <find>threadsCo</find>
+      <find>flash</find>
+      <find>laravel-elixir-vue-2</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/Http/Controllers</dir>
@@ -352,6 +188,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -367,28 +204,31 @@
         <option value="$PROJECT_DIR$/app/RecordsActivity.php" />
         <option value="$PROJECT_DIR$/tests/Feature/CreateThreadsTest.php" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php" />
-        <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Flash.vue" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profiles/activities/created_favorited.php" />
         <option value="$PROJECT_DIR$/resources/views/profiles/activities/created_favorited.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profiles/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Favorite.php" />
         <option value="$PROJECT_DIR$/resources/views/profiles/activities/created_favorite.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/threads/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Reply.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/threads/create.blade.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php" />
-        <option value="$PROJECT_DIR$/resources/views/threads/reply.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" />
         <option value="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/laradock/.gitignore" />
+        <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/threads/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/threads/reply.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" />
+        <option value="$PROJECT_DIR$/node_modules/axios/index.d.ts" />
+        <option value="$PROJECT_DIR$/resources/js/components/Reply.vue" />
       </list>
     </option>
   </component>
@@ -475,18 +315,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
     </include_path>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/forum.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/php.xml" />
-        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
@@ -497,6 +325,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -507,18 +336,71 @@
             <path>
               <item name="forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
-              <item name="laradock" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forum" type="b2602c69:ProjectViewProjectNode" />
@@ -526,16 +408,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="threads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forum" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forum" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forum" type="b2602c69:ProjectViewProjectNode" />
@@ -548,17 +420,10 @@
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="Feature" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forum" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -569,7 +434,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -616,25 +481,35 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21828000" />
+    <option name="totallyTimeSpent" value="35477000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" weight="0.32959184" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.272449" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -644,7 +519,7 @@
       <window_info anchor="right" id="Database" order="3" weight="0.15262516" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -656,7 +531,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.272449" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -669,45 +544,43 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="EPISODE 32" />
+    <option name="LAST_COMMIT_MESSAGE" value="EPISODE 32" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/debugbar/Xdffc313a3bee26a59730bf5550501d5b.json" />
-    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding>
-            <element signature="e#33#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://7231d8d2-95a4-487b-8907-845f92fe34dc/schema/forum/table/password_resets">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="fd4d1017-70e4-480f-b42d-22f4d1517217">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://7231d8d2-95a4-487b-8907-845f92fe34dc/schema/forum/table/migrations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="fd4d1017-70e4-480f-b42d-22f4d1517217">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://7231d8d2-95a4-487b-8907-845f92fe34dc/schema/forum/table/replies">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="fd4d1017-70e4-480f-b42d-22f4d1517217">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -790,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="328">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -816,48 +689,6 @@
           <folding>
             <element signature="e#33#50#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Flash.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -887,16 +718,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/profiles/activities/created_thread.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/threads/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/threads/index.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Favorite.php">
@@ -961,41 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/threads/reply.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="57" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/threads/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RepliesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1027,6 +813,131 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/threads/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/threads/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Flash.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/threads/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RepliesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/threads/reply.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="56" selection-start-column="56" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Reply.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="5517" column="15" selection-start-line="5517" selection-start-column="15" selection-end-line="5517" selection-end-column="15" />
         </state>
       </provider>
     </entry>
