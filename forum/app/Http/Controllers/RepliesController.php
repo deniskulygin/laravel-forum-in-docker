@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Thread;
 use App\Reply;
+use Exception;
 use foo\bar;
 use http\Env\Response;
 use Illuminate\Auth\Access\AuthorizationException;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
+use Illuminate\Http\{RedirectResponse, Request};
 use Illuminate\Validation\ValidationException as ValidationExceptionAlias;
 
 class RepliesController extends Controller
@@ -21,7 +21,7 @@ class RepliesController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return void
      */
     public function index()
     {
@@ -31,7 +31,7 @@ class RepliesController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return void
      */
     public function create()
     {
@@ -42,6 +42,7 @@ class RepliesController extends Controller
      * @param $channelId
      * @param Thread $thread
      * @return RedirectResponse
+     * @throws ValidationExceptionAlias
      */
     public function store($channelId, Thread $thread)
     {
@@ -70,7 +71,7 @@ class RepliesController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param Reply $reply
-     * @return \Illuminate\Http\Response
+     * @return void
      */
     public function edit(Reply $reply)
     {
@@ -97,7 +98,7 @@ class RepliesController extends Controller
      * @param Reply $reply
      *
      * @return RedirectResponse
-     * @throws \Exception
+     * @throws Exception
      */
     public function destroy(Reply $reply)
     {

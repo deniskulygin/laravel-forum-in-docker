@@ -5,7 +5,14 @@ namespace App\Http\Controllers;
 use App\Channel;
 use App\Filters\ThreadFilters;
 use App\Thread;
+use Exception;
+use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
+use Illuminate\View\View;
 
 class ThreadsController extends Controller
 {
@@ -18,7 +25,7 @@ class ThreadsController extends Controller
      * Display a listing of the resource.
      * @param ThreadFilters $filters
      * @param Channel $channel
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index(Channel $channel, ThreadFilters $filters)
     {
@@ -34,7 +41,7 @@ class ThreadsController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -44,8 +51,9 @@ class ThreadsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Response
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
@@ -69,7 +77,7 @@ class ThreadsController extends Controller
     /**
      * @param $channel
      * @param Thread $thread
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @return Factory|View
      */
     public function show($channel, Thread $thread)
     {
@@ -82,8 +90,8 @@ class ThreadsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Thread  $thread
-     * @return \Illuminate\Http\Response
+     * @param Thread $thread
+     * @return void
      */
     public function edit(Thread $thread)
     {
@@ -93,9 +101,9 @@ class ThreadsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Thread  $thread
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Thread $thread
+     * @return void
      */
     public function update(Request $request, Thread $thread)
     {
@@ -105,8 +113,8 @@ class ThreadsController extends Controller
     /**
      * @param $channel
      * @param Thread $thread
-     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
-     * @throws \Exception
+     * @return ResponseFactory|RedirectResponse|Response|Redirector
+     * @throws Exception
      */
     public function destroy($channel, Thread $thread)
     {

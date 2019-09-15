@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Favorite;
 use App\Reply;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class  FavoritesController extends Controller
@@ -15,7 +16,7 @@ class  FavoritesController extends Controller
 
     /**
      * @param Reply $reply
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function store(Reply $reply)
     {
