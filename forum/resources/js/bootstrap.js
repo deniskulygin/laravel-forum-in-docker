@@ -1,5 +1,10 @@
 window._ = require('lodash');
 window.Vue = require('vue');
+Vue.prototype.authorize = function (handler) {
+    let user = window.App.user;
+
+    return user ? handler(user) : false;
+};
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support

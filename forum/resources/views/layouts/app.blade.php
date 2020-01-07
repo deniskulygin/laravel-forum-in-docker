@@ -27,6 +27,14 @@
         [v-cloak] { display: none; }
     </style>
 
+    <script>
+        window.App = {!! json_encode([
+        'signedIn' => Auth::check(),
+        'user' => Auth::user()
+        ]) !!};
+
+    </script>
+
 </head>
 <body style="padding-bottom: 100px">
     <div id="app">
