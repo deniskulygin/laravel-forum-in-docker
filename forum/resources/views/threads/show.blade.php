@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <thread-view :initila-replies-count="{{ $thread->replies_count }}" inline-template>
+    <thread-view :initial-replies-count="{{ $thread->replies_count }}" inline-template>
         <div class="container">
             <div class="col-md-8">
                 <div class="card">
@@ -26,18 +26,11 @@
                         <div class="body">{{ $thread->body }}</div>
                     </div>
                 </div>
-                <replies :data="{{ $thread->replies }}" @removed="repliesCount--"></replies>
-                @if (auth()->check())
-                    <div class="col-md-8">
-                        <form method="POST" action="{{ $thread->path() . '/replies' }}">
-                            {{ csrf_field() }}
-                            <div class="form-group">
-                                <textarea name="body" id="body" class="form-control" placeholder="Have smth  to say?" rows="5"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-default">Post</button>
-                        </form>
-                    </div>
-                @endif
+
+                <replies :data="{{ $thread->replies }}"
+                @added="repliesCount++"
+                @removed="repliesCount--"></replies>
+
             </div>
 
             <div class="col-md-4">
