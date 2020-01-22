@@ -6,6 +6,7 @@ use App\Thread;
 use App\Reply;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Http\{RedirectResponse, Request};
 use Illuminate\Validation\ValidationException as ValidationExceptionAlias;
 
@@ -13,17 +14,18 @@ class RepliesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => 'index']);
     }
 
     /**
-     * Display a listing of the resource.
+     * @param $channelId
+     * @param Thread $thread
      *
-     * @return void
+     * @return LengthAwarePaginator
      */
-    public function index()
+    public function index($channelId, Thread $thread)
     {
-        //
+        return $thread->replies()->paginate(20);
     }
 
     /**
