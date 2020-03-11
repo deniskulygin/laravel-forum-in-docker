@@ -37,3 +37,4 @@ class CreateThreadSubscriptionsTable extends Migration
         Schema::dropIfExists('thread_subscriptions');
     }
 }
+
