@@ -59,16 +59,26 @@ class Thread extends Model
 
     /**
      * @param array $reply
+     *
      * @return Reply
      */
     public function addReply(array $reply): Reply
     {
-        return $this->replies()->create($reply);
+        $reply = $this->replies()->create($reply);
+
+        $this->subscriptions
+            ->filter(function ($sub) use ($reply) {
+                return $sub->user_id != $reply->user_id;
+            })
+            ->each->notify($reply);
+
+        return $reply;
     }
 
     /**
      * @param $query
      * @param $filters
+     *
      * @return mixed
      */
     public function scopeFilter($query, $filters)
@@ -78,12 +88,16 @@ class Thread extends Model
 
     /**
      * @param null $userId
+     *
+     * @return $this
      */
     public function subscribe($userId = null)
     {
         $this->subscriptions()->create([
             'user_id' => $userId ?: auth()->id()
             ]);
+
+        return $this;
     }
 
     public function unsubscribe($userId = null)
