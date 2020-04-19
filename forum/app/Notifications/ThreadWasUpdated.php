@@ -1,24 +1,30 @@
 <?php
 
-namespace App\Notifications;
+namespace app\notifications;
 
-use Illuminate\Bus\Queueable;
+use App\Reply;
+use App\Thread;
 use Illuminate\Notifications\Notification;
 
 class ThreadWasUpdated extends Notification
 {
-    use Queueable;
-
+    /**
+     * @var Thread
+     */
     protected $thread;
 
+    /**
+     * @var Reply
+     */
     protected $reply;
 
     /**
-     * Create a new notification instance.
+     * ThreadWasUpdated constructor.
      *
-     * @return void
+     * @param Thread $thread
+     * @param Reply $reply
      */
-    public function __construct($thread, $reply)
+    public function __construct(Thread $thread, Reply $reply)
     {
 
         $this->thread = $thread;
@@ -37,7 +43,7 @@ class ThreadWasUpdated extends Notification
     }
 
     /**
-     * Get the array representation of the notification.
+     * get the array representation of the notification.
      *
      * @param  mixed  $notifiable
      * @return array
@@ -45,7 +51,8 @@ class ThreadWasUpdated extends Notification
     public function toArray($notifiable)
     {
         return [
-            'message' => 'Temporary placeholder.'
+            'message' => $this->reply->owner->name . 'replied to' . $this->thread->title,
+            'link' => $this->reply->path()
         ];
     }
 }

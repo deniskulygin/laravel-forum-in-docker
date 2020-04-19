@@ -60,17 +60,16 @@ class Thread extends Model
     /**
      * @param array $reply
      *
-     * @return Reply
+     * @return array|Model
      */
-    public function addReply(array $reply): Reply
+    public function addReply(array $reply)
     {
         $reply = $this->replies()->create($reply);
 
         $this->subscriptions
-            ->filter(function ($sub) use ($reply) {
-                return $sub->user_id != $reply->user_id;
-            })
-            ->each->notify($reply);
+//            ->where('user_id', '!=', $reply->user_id)
+            ->each
+            ->notify($reply);
 
         return $reply;
     }
