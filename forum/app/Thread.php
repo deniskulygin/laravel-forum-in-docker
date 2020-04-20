@@ -67,7 +67,7 @@ class Thread extends Model
         $reply = $this->replies()->create($reply);
 
         $this->subscriptions
-//            ->where('user_id', '!=', $reply->user_id)
+            ->where('user_id', '!=', $reply->user_id)
             ->each
             ->notify($reply);
 
