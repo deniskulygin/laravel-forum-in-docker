@@ -77,10 +77,16 @@ class ThreadsController extends Controller
     /**
      * @param $channel
      * @param Thread $thread
+     *
      * @return Factory|View
+     * @throws Exception
      */
     public function show($channel, Thread $thread)
     {
+        if (auth()->check()) {
+            auth()->user()->read($thread);
+        }
+
         return view('threads.show', compact('thread'));
     }
 
