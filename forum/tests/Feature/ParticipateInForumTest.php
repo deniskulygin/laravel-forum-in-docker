@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use Dotenv\Exception\ValidationException;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -26,7 +27,6 @@ class ParticipateInForumTest extends TestCase
         $thread = create('App\Thread');
         $reply = make('App\Reply');
 
-
         $this->post($thread->path().'/replies', $reply->toArray());
 
         $this->assertDatabaseHas('replies', ['body' => $reply->body]);
@@ -37,7 +37,6 @@ class ParticipateInForumTest extends TestCase
     function a_reply_requires_a_body()
     {
         $this->withExceptionHandling()->signIn();
-
         $thread = create('App\Thread');
         $reply = make('App\Reply', ['body' => null]);
 
@@ -49,7 +48,6 @@ class ParticipateInForumTest extends TestCase
     function unauthorized_users_cannot_delete_replies()
     {
         $this->withExceptionHandling();
-
         $reply = create('App\Reply');
 
         $this->delete("/replies/{$reply->id}")
@@ -97,5 +95,19 @@ class ParticipateInForumTest extends TestCase
         $this->patch("/replies/{$reply->id}", ['body' => $updatedReply]);
 
         $this->assertDatabaseHas('replies', ['id' => $reply->id, 'body' => $updatedReply]);
+    }
+
+    /** @test */
+    function replies_that_contain_spam_may_not_be_created()
+    {
+        $this->signIn();
+        $thread = create('App\Thread');
+        $reply = make('App\Reply', [
+            'body' => 'Yahoo Customer Support'
+        ]);
+
+        $this->expectException(\Exception::class);
+
+        $this->post($thread->path() . '/replies', $reply->toArray());
     }
 }
