@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9ba2b12-16c1-4650-a265-c24f81f229a0" name="Default Changelist" comment="EPISODE 33 Ajaxifying the Delete Button">
-      <change afterPath="$PROJECT_DIR$/app/Spam.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/SpamTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7231d8d2-95a4-487b-8907-845f92fe34dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7231d8d2-95a4-487b-8907-845f92fe34dc.xml" afterDir="false" />
+    <list default="true" id="f9ba2b12-16c1-4650-a265-c24f81f229a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Inspections/InspectionsInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Inspections/InvalidKeywords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Inspections/KeyHeldDown.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Spam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Inspections/Spam.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/SpamTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/SpamTest.php" afterDir="false" />
     </list>
     <list id="1b0d2a0d-a472-4cd3-a7d0-0b306a72f709" name="EPISODE 34 A Vue Favorite Component" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,19 +56,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="210">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/profiles/activities/created_favorite.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="15">
+              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+            <state relative-caret-position="677">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RepliesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+            <state relative-caret-position="459">
+              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -85,10 +86,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Inspections/InvalidKeywords.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Inspections/KeyHeldDown.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Inspections/InspectionsInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadSubscriptionsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/SpamTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="240">
+              <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
               <folding>
                 <element signature="e#32#45#0#PHP" expanded="true" />
               </folding>
@@ -96,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Spam.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Inspections/Spam.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="450">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -199,10 +236,14 @@
         <option value="$PROJECT_DIR$/app/Favoritable.php" />
         <option value="$PROJECT_DIR$/resources/views/profiles/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/threads/reply.blade.php" />
-        <option value="$PROJECT_DIR$/tests/Unit/SpamTest.php" />
-        <option value="$PROJECT_DIR$/app/Spam.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php" />
+        <option value="$PROJECT_DIR$/app/Spam.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/SpamTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" />
+        <option value="$PROJECT_DIR$/app/Inspections/InspectionsInterface.php" />
+        <option value="$PROJECT_DIR$/app/Inspections/InvalidKeywords.php" />
+        <option value="$PROJECT_DIR$/app/Inspections/KeyHeldDown.php" />
+        <option value="$PROJECT_DIR$/app/Inspections/Spam.php" />
       </list>
     </option>
   </component>
@@ -331,6 +372,12 @@
             <path>
               <item name="forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Inspections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,6 +437,11 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Inspections" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -434,7 +486,7 @@
       <workItem from="1566337595648" duration="8200000" />
       <workItem from="1568064385618" duration="579000" />
       <workItem from="1568580400603" duration="1894000" />
-      <workItem from="1588884412428" duration="1998000" />
+      <workItem from="1588884412428" duration="4171000" />
     </task>
     <task id="LOCAL-00001" summary="EPISODE 32">
       <created>1566132399246</created>
@@ -450,11 +502,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566336320948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="EPISODE 49 - Spam Detection">
+      <created>1588939760344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588939760344</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55318000" />
+    <option name="totallyTimeSpent" value="57491000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -484,7 +543,7 @@
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.26938775" />
+      <window_info anchor="bottom" id="Version Control" order="11" visible="true" weight="0.26938775" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.2887755" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
@@ -542,40 +601,10 @@
     <MESSAGE value="EPISODE 32" />
     <MESSAGE value="EPISODE 33 Ajaxifying the Delete Button" />
     <MESSAGE value="EPISODE 35 Bug fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="EPISODE 35 Bug fixing" />
+    <MESSAGE value="EPISODE 49 - Spam Detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="EPISODE 49 - Spam Detection" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114375">
@@ -861,37 +890,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Spam.php">
+    <entry file="file://$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="677">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/SpamTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="240">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
           <folding>
             <element signature="e#32#45#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadSubscriptionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ThreadsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Inspections/InspectionsInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Inspections/InvalidKeywords.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Inspections/KeyHeldDown.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RepliesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+        <state relative-caret-position="459">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ParticipateInForumTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Inspections/Spam.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
