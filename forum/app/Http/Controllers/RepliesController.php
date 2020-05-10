@@ -3,15 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Exceptions\ErrorMessages;
-use App\Inspections\Spam;
 use App\Thread;
 use App\Reply;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\Routing\ResponseFactory;
-use Illuminate\Http\{RedirectResponse, Request, Response};
-use Illuminate\Validation\ValidationException as ValidationExceptionAlias;
+use Illuminate\Http\{RedirectResponse, Response};
 
 class RepliesController extends Controller
 {
@@ -50,7 +48,7 @@ class RepliesController extends Controller
     public function store($channelId, Thread $thread)
     {
         try {
-            $this->validateReply();
+            request()->validate(['body' => 'required|spamfree']);
 
             $reply = $thread->addReply([
                 'body' => request('body'),
@@ -90,18 +88,16 @@ class RepliesController extends Controller
     }
 
     /**
-     * @param Request $request
      * @param Reply $reply
-     * @param Spam $spam
      *
      * @return ResponseFactory|Response
      * @throws AuthorizationException
      */
-    public function update(Request $request, Reply $reply, Spam $spam)
+    public function update(Reply $reply)
     {
         $this->authorize('update', $reply);
         try {
-            $this->validateReply();
+            request()->validate(['body' => 'required|spamfree']);
             $reply->update(['body' => request('body')]);
         } catch (\Exception $e) {
             return response(ErrorMessages::REPLY_COULD_NOT_BE_SAVED, 422);
@@ -125,14 +121,5 @@ class RepliesController extends Controller
         }
 
         return back();
-    }
-
-    /**
-     * @throws ValidationExceptionAlias
-     */
-    private function validateReply()
-    {
-        $this->validate(request(), ['body' => 'required']);
-        resolve(Spam::class)->detect(request('body'));
     }
 }
