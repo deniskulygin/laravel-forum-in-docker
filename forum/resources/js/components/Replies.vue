@@ -30,7 +30,10 @@
 
         methods: {
             fetch(page) {
-                axios.get(this.url(page)).then(this.refresh);
+                axios.get(this.url(page)).then(this.refresh)
+                    .catch(error => {
+                        console.log(error.response);
+                    })
             },
 
             url(page) {

@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\ErrorMessages;
 use App\Inspections\Spam;
 use App\Thread;
 use App\Reply;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use Illuminate\Http\{RedirectResponse, Request};
+use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Http\{RedirectResponse, Request, Response};
 use Illuminate\Validation\ValidationException as ValidationExceptionAlias;
 
 class RepliesController extends Controller
@@ -40,19 +42,23 @@ class RepliesController extends Controller
     }
 
     /**
+     * @param $channelId
      * @param Thread $thread
      *
      * @return Reply|RedirectResponse
-     * @throws ValidationExceptionAlias
      */
-    public function store(Thread $thread)
+    public function store($channelId, Thread $thread)
     {
-        $this->validateReply();
+        try {
+            $this->validateReply();
 
-        $reply = $thread->addReply([
-            'body' => request('body'),
-            'user_id' => auth()->id()
-        ]);
+            $reply = $thread->addReply([
+                'body' => request('body'),
+                'user_id' => auth()->id()
+            ]);
+        } catch (\Exception $e) {
+            return response(ErrorMessages::REPLY_COULD_NOT_BE_SAVED, 422);
+        }
 
         if(\request()->expectsJson()) {
             return $reply->load('owner');
@@ -88,17 +94,18 @@ class RepliesController extends Controller
      * @param Reply $reply
      * @param Spam $spam
      *
+     * @return ResponseFactory|Response
      * @throws AuthorizationException
-     * @throws ValidationExceptionAlias
      */
-    public function update(Request $request, Reply $reply, Spam $spam): void
+    public function update(Request $request, Reply $reply, Spam $spam)
     {
         $this->authorize('update', $reply);
-
-        $this->validate($request, ['body' => 'required']);
-        $spam->detect($request['body']);
-
-        $reply->update(['body' => request('body')]);
+        try {
+            $this->validateReply();
+            $reply->update(['body' => request('body')]);
+        } catch (\Exception $e) {
+            return response(ErrorMessages::REPLY_COULD_NOT_BE_SAVED, 422);
+        }
     }
 
     /**

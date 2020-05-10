@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Channel;
+use App\Exceptions\ErrorMessages;
 use App\Filters\ThreadFilters;
 use App\Inspections\Spam;
 use App\Thread;
