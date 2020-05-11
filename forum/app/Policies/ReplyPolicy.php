@@ -30,4 +30,18 @@ class ReplyPolicy
     {
         return $reply->user_id == $user->id;
     }
+
+    /**
+     * @param User $user
+     *
+     * @return bool
+     */
+    public function create(User $user)
+    {
+        if (! $lastReply = $user->fresh()->lastReply) {
+            return true;
+        }
+
+        return ! $lastReply->wasJustPublished();
+    }
 }

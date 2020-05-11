@@ -10,6 +10,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\{RedirectResponse, Response};
+use Illuminate\Support\Facades\Gate;
 
 class RepliesController extends Controller
 {
@@ -47,6 +48,10 @@ class RepliesController extends Controller
      */
     public function store($channelId, Thread $thread)
     {
+        if (Gate::denies('create', new Reply)) {
+            return response('You are posting too frequently. Please take a break. :)', 429);
+        }
+
         try {
             request()->validate(['body' => 'required|spamfree']);
 
@@ -58,11 +63,7 @@ class RepliesController extends Controller
             return response(ErrorMessages::REPLY_COULD_NOT_BE_SAVED, 422);
         }
 
-        if(\request()->expectsJson()) {
-            return $reply->load('owner');
-        }
-
-        return back()->with('flash', 'Your reply has been left.');
+        return $reply->load('owner');
     }
 
     /**

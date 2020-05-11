@@ -3,6 +3,8 @@
 namespace App;
 
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -42,12 +44,26 @@ class User extends Authenticatable
         return 'name';
     }
 
-    public function threads()
+    /**
+     * @return HasMany
+     */
+    public function threads(): HasMany
     {
        return $this->hasMany(Thread::class)->latest();
     }
 
-    public function activity()
+    /**
+     * @return HasOne
+     */
+    public function lastReply()
+    {
+        return $this->hasOne(Reply::class)->latest();
+    }
+
+    /**
+     * @return HasMany
+     */
+    public function activity(): HasMany
     {
         return $this->hasMany(Activity::class);
     }
