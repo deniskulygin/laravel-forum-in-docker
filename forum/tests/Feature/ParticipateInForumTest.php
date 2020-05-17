@@ -40,7 +40,7 @@ class ParticipateInForumTest extends TestCase
         $thread = create('App\Thread');
         $reply = make('App\Reply', ['body' => null]);
 
-        $this->post($thread->path().'/replies', $reply->toArray())
+        $this->json('post', $thread->path().'/replies', $reply->toArray())
             ->assertStatus(422);
     }
 
@@ -100,20 +100,20 @@ class ParticipateInForumTest extends TestCase
     /** @test */
     function replies_that_contain_spam_may_not_be_created()
     {
-        $this->signIn();
+        $this->withExceptionHandling()->signIn();
         $thread = create('App\Thread');
         $reply = make('App\Reply', [
             'body' => 'Yahoo Customer Support'
         ]);
-
-        $this->post($thread->path() . '/replies', $reply->toArray())
+    
+        $this->json('post', $thread->path() . '/replies', $reply->toArray())
             ->assertStatus(422);
     }
 
     /** @test */
     function a_user_may_only_reply_a_maximum_one_per_minute()
     {
-        $this->signIn();
+        $this->withExceptionHandling()->signIn();
         $thread = create('App\Thread');
         $reply = make('App\Reply', [
             'body' => 'My simple reply'
